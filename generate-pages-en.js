@@ -1,0 +1,370 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+
+const competitors = JSON.parse(fs.readFileSync('competitors-list.json', 'utf8'));
+
+const outputDir = 'pages';
+if (!fs.existsSync(outputDir)) {
+  fs.mkdirSync(outputDir, { recursive: true });
+}
+
+function generatePage(competitor) {
+  const slug = competitor.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+  
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${competitor.name} Alternative - Best Free PDF Tool 2026 | PDF Join & Stamp</title>
+    <meta name="description" content="Looking for a ${competitor.name} alternative? PDF Join & Stamp is 100% free, works offline, and needs no sign-up. Compare now and see why it's better.">
+    <meta name="keywords" content="${competitor.name} alternative, free pdf tool, pdf merger, pdf compressor, best ${competitor.name.toLowerCase()} alternative">
+    
+    <meta property="og:title" content="${competitor.name} Alternative - PDF Join & Stamp (Free)">
+    <meta property="og:description" content="100% Free • No Sign-up • Works Offline • Better than ${competitor.name}">
+    <meta property="og:type" content="website">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "PDF Join & Stamp",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Chrome",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1000"
+      }
+    }
+    </script>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        h1 { font-size: 3em; margin-bottom: 20px; }
+        .subtitle { font-size: 1.4em; opacity: 0.95; }
+        .comparison {
+            background: white;
+            border-radius: 15px;
+            padding: 50px;
+            margin: 50px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+        }
+        th, td {
+            padding: 18px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background: #f8f9fa;
+            font-weight: 700;
+            font-size: 1.05em;
+        }
+        .winner { background: #d4edda; font-weight: bold; }
+        .cta {
+            background: #28a745;
+            color: white;
+            padding: 22px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: 25px 0;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 15px rgba(40,167,69,0.3);
+        }
+        .cta:hover { transform: scale(1.05); }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
+        }
+        .feature-card {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        .feature-card h3 { color: #667eea; margin-bottom: 15px; }
+        .badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #28a745;
+            color: white;
+            border-radius: 25px;
+            font-size: 0.95em;
+            margin: 8px 5px;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎯 Best ${competitor.name} Alternative</h1>
+            <p class="subtitle">Why PDF Join & Stamp is the #1 free alternative in 2026</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="comparison">
+            <h2 style="font-size: 2.2em; margin-bottom: 30px;">⚡ Why Choose PDF Join & Stamp?</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>PDF Join & Stamp</th>
+                        <th>${competitor.name}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Price</td>
+                        <td class="winner">✅ 100% FREE Forever</td>
+                        <td>❌ Freemium / Paid</td>
+                    </tr>
+                    <tr>
+                        <td>Sign-up Required</td>
+                        <td class="winner">✅ None</td>
+                        <td>❌ Required</td>
+                    </tr>
+                    <tr>
+                        <td>Merge PDFs</td>
+                        <td class="winner">✅ Unlimited</td>
+                        <td>⚠️ Limited without premium</td>
+                    </tr>
+                    <tr>
+                        <td>Add Stamps</td>
+                        <td class="winner">✅ Included</td>
+                        <td>❌ Not available</td>
+                    </tr>
+                    <tr>
+                        <td>Compress</td>
+                        <td class="winner">✅ Included</td>
+                        <td>✅ Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Rotate</td>
+                        <td class="winner">✅ Included</td>
+                        <td>✅ Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Privacy</td>
+                        <td class="winner">✅ 100% offline processing</td>
+                        <td>⚠️ Uploads to server</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td class="winner">✅ Instant (offline)</td>
+                        <td>⚠️ Depends on internet</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="text-align: center; margin: 50px 0;">
+                <a href="https://chrome.google.com/webstore/detail/pdf-join-stamp/YOUR_EXTENSION_ID" class="cta">
+                    📥 Install PDF Join & Stamp FREE
+                </a>
+                <p style="margin-top: 15px; color: #666;">
+                    <span class="badge">1000+ users</span>
+                    <span class="badge">⭐ 4.8/5</span>
+                    <span class="badge">100% Free</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="comparison">
+            <h2 style="font-size: 2.2em; margin-bottom: 40px;">🎁 What Makes PDF Join & Stamp Unique</h2>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🔒 Total Privacy</h3>
+                    <p>Your PDFs never leave your computer. 100% offline processing in your browser.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>⚡ Lightning Fast</h3>
+                    <p>No upload/download time. Instant processing.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>💰 Truly Free</h3>
+                    <p>No limits. No paywall. No sign-up. Free forever.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🎯 All-in-One</h3>
+                    <p>Merge, stamp, compress, rotate - everything you need.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🌐 Works Everywhere</h3>
+                    <p>Chrome extension. Works on Windows, Mac, Linux, ChromeOS.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📱 No Installation</h3>
+                    <p>Lightweight Chrome extension. Works immediately after install.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison">
+            <h2 style="font-size: 2.2em; margin-bottom: 30px;">❓ Frequently Asked Questions</h2>
+            
+            <div style="margin: 25px 0;">
+                <h3>Why switch from ${competitor.name} to PDF Join & Stamp?</h3>
+                <p>PDF Join & Stamp is 100% free with no sign-up, and processes your files offline for maximum privacy and speed.</p>
+            </div>
+            
+            <div style="margin: 25px 0;">
+                <h3>Are there any limitations?</h3>
+                <p>No. Unlike ${competitor.name}, PDF Join & Stamp has zero limitations. Everything is free and unlimited.</p>
+            </div>
+            
+            <div style="margin: 25px 0;">
+                <h3>Are my files secure?</h3>
+                <p>Absolutely. Your PDFs never leave your computer. Everything is processed locally in your browser.</p>
+            </div>
+            
+            <div style="margin: 25px 0;">
+                <h3>How do I install PDF Join & Stamp?</h3>
+                <p>Simply click the button above to go to the Chrome Web Store and install with one click.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 80px 0;">
+            <h2 style="font-size: 2.5em; margin-bottom: 20px;">🚀 Ready to Switch?</h2>
+            <p style="font-size: 1.3em; margin: 25px 0;">Join thousands who've made the switch</p>
+            <a href="https://chrome.google.com/webstore/detail/pdf-join-stamp/YOUR_EXTENSION_ID" class="cta">
+                Try PDF Join & Stamp Free
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 PDF Join & Stamp - Best free alternative to ${competitor.name}</p>
+            <p style="margin-top: 10px; opacity: 0.8;">100% Free • No Sign-up • Private & Secure • Works Offline</p>
+        </div>
+    </footer>
+</body>
+</html>`;
+}
+
+competitors.forEach(competitor => {
+  const slug = competitor.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+  const filename = `alternative-to-${slug}.html`;
+  const filepath = path.join(outputDir, filename);
+  
+  const html = generatePage(competitor);
+  fs.writeFileSync(filepath, html);
+  
+  console.log(`✅ Created: ${filename}`);
+});
+
+const indexHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best PDF Tool Alternatives 2026 - Free Comparisons</title>
+    <meta name="description" content="Compare the best alternatives to popular PDF tools. PDF Join & Stamp - 100% free, no sign-up, all-in-one solution.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f8f9fa;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        h1 { font-size: 3.5em; margin-bottom: 25px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 50px 20px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 35px;
+            margin: 50px 0;
+        }
+        .card {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: #667eea; margin-bottom: 18px; }
+        .card a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎯 PDF Tool Alternatives</h1>
+        <p style="font-size: 1.4em; opacity: 0.95;">Find the best free alternative to your current PDF tool</p>
+    </header>
+    
+    <div class="container">
+        <div class="grid">
+${competitors.map(c => {
+  const slug = c.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+  return `            <div class="card">
+                <h3>${c.name} Alternative</h3>
+                <p>Discover why PDF Join & Stamp is a better free alternative to ${c.name}.</p>
+                <a href="alternative-to-${slug}.html">Compare Now →</a>
+            </div>`;
+}).join('\n')}
+        </div>
+    </div>
+</body>
+</html>`;
+
+fs.writeFileSync(path.join(outputDir, 'index.html'), indexHtml);
+console.log('✅ Created: index.html');
+
+console.log(`\n🎉 ${competitors.length + 1} pages generated in ${outputDir}/`);

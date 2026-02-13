@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Smallpdf",
+    "chromeStoreId": "ohfgljdgelakfkefopgklcohadegdpjf",
+    "category": "PDF Tools",
+    "estimatedUsers": "1M+",
+    "mainFeatures": ["Compress", "Merge", "Split", "Convert"]
+  },
+  {
+    "name": "iLovePDF",
+    "chromeStoreId": "bkgillaonapcdlhppglaadohkgdjaeho",
+    "category": "PDF Tools",
+    "estimatedUsers": "500K+",
+    "mainFeatures": ["Merge", "Split", "Compress", "Convert", "Edit"]
+  },
+  {
+    "name": "PDF24 Tools",
+    "chromeStoreId": "pdfjdceogliofpmebmllnfgjjlfillpo",
+    "category": "PDF Tools",
+    "estimatedUsers": "100K+",
+    "mainFeatures": ["Create", "Convert", "Merge", "Compress"]
+  },
+  {
+    "name": "Soda PDF",
+    "chromeStoreId": "gfjafjofnehohehighdlkhkknflkeapp",
+    "category": "PDF Tools",
+    "estimatedUsers": "100K+",
+    "mainFeatures": ["Edit", "Convert", "Merge", "Sign"]
+  },
+  {
+    "name": "PDFfiller",
+    "chromeStoreId": "mpljbcbkcfigddjmlmlondmgabmfgghp",
+    "category": "PDF Tools",
+    "estimatedUsers": "50K+",
+    "mainFeatures": ["Fill", "Sign", "Send"]
+  },
+  {
+    "name": "Adobe Acrobat",
+    "chromeStoreId": "efaidnbmnnnibpcajpcglclefindmkaj",
+    "category": "PDF Tools",
+    "estimatedUsers": "10M+",
+    "mainFeatures": ["View", "Fill", "Sign", "Comment"]
+  },
+  {
+    "name": "Kami",
+    "chromeStoreId": "ecnphlgnajanjnkcmbpancdjoidceilk",
+    "category": "PDF Tools",
+    "estimatedUsers": "5M+",
+    "mainFeatures": ["Annotate", "Collaborate", "Fill", "Sign"]
+  },
+  {
+    "name": "DocHub",
+    "chromeStoreId": "lcgjgcjkkdondikbijloodjiagkbcpbd",
+    "category": "PDF Tools",
+    "estimatedUsers": "1M+",
+    "mainFeatures": ["Edit", "Sign", "Fill", "Merge"]
+  },
+  {
+    "name": "PDF Merge",
+    "chromeStoreId": "hglfncmjkfaggbbpjkplgkmmjaehabpe",
+    "category": "PDF Tools",
+    "estimatedUsers": "50K+",
+    "mainFeatures": ["Merge", "Combine"]
+  },
+  {
+    "name": "PDF Compressor",
+    "chromeStoreId": "ghfpcmhmhppjopfnlpoekmojhajgbcno",
+    "category": "PDF Tools",
+    "estimatedUsers": "30K+",
+    "mainFeatures": ["Compress", "Reduce size"]
+  }
+]
