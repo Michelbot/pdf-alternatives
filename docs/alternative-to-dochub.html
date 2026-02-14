@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DocHub Alternative - Best Free PDF Tool 2026 | PDF Join & Stamp</title>
-    <meta name="description" content="Looking for a DocHub alternative? PDF Join & Stamp is 100% free, works offline, and needs no sign-up. Compare now and see why it's better.">
-    <meta name="keywords" content="DocHub alternative, free pdf tool, pdf merger, pdf compressor, best dochub alternative">
+    <title>Best DocHub Alternative - PDF Join & Stamp (100% Free) 2026</title>
+    <meta name="description" content="Looking for a DocHub alternative? PDF Join & Stamp is 100% free, all-in-one, and requires no sign-up. Compare features now.">
+    <meta name="keywords" content="DocHub alternative, alternative to DocHub, free pdf tools, best pdf extension">
     
-    <meta property="og:title" content="DocHub Alternative - PDF Join & Stamp (Free)">
-    <meta property="og:description" content="100% Free • No Sign-up • Works Offline • Better than DocHub">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Best DocHub Alternative - PDF Join & Stamp">
+    <meta property="og:description" content="100% Free • No Sign-Up • All-in-One • Better than DocHub">
     <meta property="og:type" content="website">
     
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "PDF Join & Stamp",
       "applicationCategory": "ProductivityApplication",
-      "operatingSystem": "Chrome",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -32,239 +38,603 @@
     </script>
     
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f8f9fa;
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        
+        /* Design System V2 - Minimalism Swiss Style */
+        :root {
+            /* Colors */
+            --primary: #0EA5E9;      /* Sky Blue */
+            --secondary: #38BDF8;    /* Light Sky */
+            --cta: #F97316;          /* Orange */
+            --bg-light: #F0F9FF;     /* Very Light Blue */
+            --text: #0C4A6E;         /* Dark Blue */
+            --neutral-dark: #1E293B; /* Slate */
+            --neutral-light: #F8FAFC; /* Light Slate */
+            --white: #FFFFFF;
+            --success: #10B981;
+            --error: #EF4444;
+            
+            /* Typography */
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+            
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 0.75rem;
+            --space-base: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            
+            /* Transitions */
+            --transition: all 200ms ease;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--neutral-dark);
+        }
+        
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+        h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+        
+        /* Container */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+        
+        /* Header */
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 20px;
+            background: var(--white);
+            padding: var(--space-lg) 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            border-radius: 0.5rem;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: var(--cta);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(249, 115, 22, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        /* Hero */
+        .hero {
+            padding: var(--space-3xl) 0;
+            background: linear-gradient(180deg, var(--bg-light) 0%, var(--white) 100%);
             text-align: center;
         }
-        h1 { font-size: 3em; margin-bottom: 20px; }
-        .subtitle { font-size: 1.4em; opacity: 0.95; }
-        .comparison {
-            background: white;
-            border-radius: 15px;
-            padding: 50px;
-            margin: 50px 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        
+        .hero h1 {
+            margin-bottom: var(--space-lg);
         }
-        table {
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text);
+            opacity: 0.8;
+            margin-bottom: var(--space-2xl);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-ctas {
+            display: flex;
+            gap: var(--space-lg);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* Stats Bar */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-xl);
+            padding: var(--space-2xl) 0;
+            background: var(--white);
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto var(--space-base);
+            color: var(--primary);
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--neutral-dark);
+            font-family: var(--font-heading);
+        }
+        
+        .stat-label {
+            color: var(--text);
+            opacity: 0.7;
+        }
+        
+        /* Section */
+        section {
+            padding: var(--space-3xl) 0;
+        }
+        
+        section:nth-child(even) {
+            background: var(--neutral-light);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+        
+        .section-header h2 {
+            margin-bottom: var(--space-base);
+        }
+        
+        .section-header p {
+            font-size: 1.125rem;
+            opacity: 0.8;
+        }
+        
+        /* Comparison Table */
+        .comparison-table {
+            background: var(--white);
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .comparison-table table {
             width: 100%;
             border-collapse: collapse;
-            margin: 40px 0;
         }
-        th, td {
-            padding: 18px;
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: var(--space-lg);
             text-align: left;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid var(--neutral-light);
         }
-        th {
-            background: #f8f9fa;
-            font-weight: 700;
-            font-size: 1.05em;
+        
+        .comparison-table th {
+            background: var(--neutral-dark);
+            color: var(--white);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            position: sticky;
+            top: 72px;
         }
-        .winner { background: #d4edda; font-weight: bold; }
-        .cta {
-            background: #28a745;
-            color: white;
-            padding: 22px 50px;
-            border-radius: 50px;
-            text-decoration: none;
+        
+        .comparison-table tr:nth-child(even) {
+            background: var(--bg-light);
+        }
+        
+        .highlight {
+            background: rgba(14, 165, 233, 0.1) !important;
+            font-weight: 600;
+        }
+        
+        .icon {
+            width: 24px;
+            height: 24px;
             display: inline-block;
-            font-size: 1.3em;
-            font-weight: bold;
-            margin: 25px 0;
-            transition: transform 0.2s;
-            box-shadow: 0 4px 15px rgba(40,167,69,0.3);
+            vertical-align: middle;
         }
-        .cta:hover { transform: scale(1.05); }
-        .features {
+        
+        .icon-success {
+            color: var(--success);
+        }
+        
+        .icon-error {
+            color: var(--error);
+        }
+        
+        /* Feature Grid */
+        .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin: 50px 0;
+            gap: var(--space-xl);
         }
+        
         .feature-card {
-            background: white;
-            padding: 35px;
-            border-radius: 15px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            background: var(--white);
+            padding: var(--space-xl);
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
         }
-        .feature-card h3 { color: #667eea; margin-bottom: 15px; }
-        .badge {
-            display: inline-block;
-            padding: 8px 20px;
-            background: #28a745;
-            color: white;
-            border-radius: 25px;
-            font-size: 0.95em;
-            margin: 8px 5px;
+        
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
-        footer {
-            background: #2c3e50;
-            color: white;
-            padding: 50px 20px;
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--bg-light);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-lg);
+            color: var(--primary);
+        }
+        
+        .feature-card h3 {
+            margin-bottom: var(--space-base);
+        }
+        
+        .feature-card p {
+            opacity: 0.8;
+        }
+        
+        /* FAQ */
+        .faq-item {
+            background: var(--white);
+            padding: var(--space-xl);
+            margin-bottom: var(--space-lg);
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-item h3 {
+            margin-bottom: var(--space-base);
+            color: var(--primary);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
             text-align: center;
-            margin-top: 80px;
+            padding: var(--space-3xl) 0;
+        }
+        
+        .cta-section h2 {
+            color: var(--white);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .cta-section .btn-primary {
+            background: var(--white);
+            color: var(--primary);
+        }
+        
+        .cta-section .btn-primary:hover {
+            background: var(--cta);
+            color: var(--white);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--neutral-dark);
+            color: var(--white);
+            padding: var(--space-2xl) 0;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-ctas {
+                flex-direction: column;
+            }
+            
+            .comparison-table {
+                overflow-x: auto;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+        
+        :focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
-            <h1>🎯 Best DocHub Alternative</h1>
-            <p class="subtitle">Why PDF Join & Stamp is the #1 free alternative in 2026</p>
+            <div class="header-content">
+                <a href="index.html" class="logo">PDF Join & Stamp</a>
+                <a href="https://chromewebstore.google.com/detail/pdf-join-stamp/YOUR_EXTENSION_ID" class="btn btn-primary" target="_blank">Add to Chrome - Free</a>
+            </div>
         </div>
     </header>
 
-    <div class="container">
-        <div class="comparison">
-            <h2 style="font-size: 2.2em; margin-bottom: 30px;">⚡ Why Choose PDF Join & Stamp?</h2>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>PDF Join & Stamp</th>
-                        <th>DocHub</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Price</td>
-                        <td class="winner">✅ 100% FREE Forever</td>
-                        <td>❌ Freemium / Paid</td>
-                    </tr>
-                    <tr>
-                        <td>Sign-up Required</td>
-                        <td class="winner">✅ None</td>
-                        <td>❌ Required</td>
-                    </tr>
-                    <tr>
-                        <td>Merge PDFs</td>
-                        <td class="winner">✅ Unlimited</td>
-                        <td>⚠️ Limited without premium</td>
-                    </tr>
-                    <tr>
-                        <td>Add Stamps</td>
-                        <td class="winner">✅ Included</td>
-                        <td>❌ Not available</td>
-                    </tr>
-                    <tr>
-                        <td>Compress</td>
-                        <td class="winner">✅ Included</td>
-                        <td>✅ Yes</td>
-                    </tr>
-                    <tr>
-                        <td>Rotate</td>
-                        <td class="winner">✅ Included</td>
-                        <td>✅ Yes</td>
-                    </tr>
-                    <tr>
-                        <td>Privacy</td>
-                        <td class="winner">✅ 100% offline processing</td>
-                        <td>⚠️ Uploads to server</td>
-                    </tr>
-                    <tr>
-                        <td>Speed</td>
-                        <td class="winner">✅ Instant (offline)</td>
-                        <td>⚠️ Depends on internet</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div style="text-align: center; margin: 50px 0;">
-                <a href="https://chrome.google.com/webstore/detail/pdf-join-stamp/YOUR_EXTENSION_ID" class="cta">
-                    📥 Install PDF Join & Stamp FREE
-                </a>
-                <p style="margin-top: 15px; color: #666;">
-                    <span class="badge">1000+ users</span>
-                    <span class="badge">⭐ 4.8/5</span>
-                    <span class="badge">100% Free</span>
-                </p>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Best DocHub Alternative</h1>
+            <p>Looking for a better DocHub alternative? PDF Join & Stamp is 100% free, requires no sign-up, and includes all features you need.</p>
+            <div class="hero-ctas">
+                <a href="https://chromewebstore.google.com/detail/pdf-join-stamp/YOUR_EXTENSION_ID" class="btn btn-primary" target="_blank">Get PDF Join & Stamp - Free</a>
+                <a href="#comparison" class="btn btn-secondary">Compare Features</a>
             </div>
         </div>
+    </section>
 
-        <div class="comparison">
-            <h2 style="font-size: 2.2em; margin-bottom: 40px;">🎁 What Makes PDF Join & Stamp Unique</h2>
-            
-            <div class="features">
-                <div class="feature-card">
-                    <h3>🔒 Total Privacy</h3>
-                    <p>Your PDFs never leave your computer. 100% offline processing in your browser.</p>
+    <!-- Stats -->
+    <section>
+        <div class="container">
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-icon"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></div>
+                    <div class="stat-value">1,000+</div>
+                    <div class="stat-label">Active Users</div>
                 </div>
-                
-                <div class="feature-card">
-                    <h3>⚡ Lightning Fast</h3>
-                    <p>No upload/download time. Instant processing.</p>
+                <div class="stat">
+                    <div class="stat-icon"><svg class="icon" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg></div>
+                    <div class="stat-value">4.8</div>
+                    <div class="stat-label">Chrome Store Rating</div>
                 </div>
-                
-                <div class="feature-card">
-                    <h3>💰 Truly Free</h3>
-                    <p>No limits. No paywall. No sign-up. Free forever.</p>
+                <div class="stat">
+                    <div class="stat-icon"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Free Forever</div>
                 </div>
-                
-                <div class="feature-card">
-                    <h3>🎯 All-in-One</h3>
-                    <p>Merge, stamp, compress, rotate - everything you need.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <h3>🌐 Works Everywhere</h3>
-                    <p>Chrome extension. Works on Windows, Mac, Linux, ChromeOS.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <h3>📱 No Installation</h3>
-                    <p>Lightweight Chrome extension. Works immediately after install.</p>
+                <div class="stat">
+                    <div class="stat-icon"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div>
+                    <div class="stat-value">Privacy</div>
+                    <div class="stat-label">No Account Needed</div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="comparison">
-            <h2 style="font-size: 2.2em; margin-bottom: 30px;">❓ Frequently Asked Questions</h2>
-            
-            <div style="margin: 25px 0;">
-                <h3>Why switch from DocHub to PDF Join & Stamp?</h3>
-                <p>PDF Join & Stamp is 100% free with no sign-up, and processes your files offline for maximum privacy and speed.</p>
+    <!-- Comparison Table -->
+    <section id="comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2>PDF Join & Stamp vs DocHub</h2>
+                <p>See how PDF Join & Stamp compares to DocHub</p>
             </div>
             
-            <div style="margin: 25px 0;">
-                <h3>Are there any limitations?</h3>
-                <p>No. Unlike DocHub, PDF Join & Stamp has zero limitations. Everything is free and unlimited.</p>
-            </div>
-            
-            <div style="margin: 25px 0;">
-                <h3>Are my files secure?</h3>
-                <p>Absolutely. Your PDFs never leave your computer. Everything is processed locally in your browser.</p>
-            </div>
-            
-            <div style="margin: 25px 0;">
-                <h3>How do I install PDF Join & Stamp?</h3>
-                <p>Simply click the button above to go to the Chrome Web Store and install with one click.</p>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="highlight">PDF Join & Stamp</th>
+                            <th>DocHub</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Price</td>
+                            <td class="highlight"><strong>100% Free</strong></td>
+                            <td>Freemium</td>
+                        </tr>
+                        <tr>
+                            <td>Sign-up Required</td>
+                            <td class="highlight"><span class="icon-error"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></span> No</td>
+                            <td><span class="icon-success"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Merge PDFs</td>
+                            <td class="highlight"><span class="icon-success"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span></td>
+                            <td><span class="icon-success"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span></td>
+                        </tr>
+                        <tr>
+                            <td>Add Stamps</td>
+                            <td class="highlight"><span class="icon-success"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span></td>
+                            <td><span class="icon-error"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></span></td>
+                        </tr>
+                        <tr>
+                            <td>Compress PDFs</td>
+                            <td class="highlight"><span class="icon-success"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span></td>
+                            <td><span class="icon-error"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></span></td>
+                        </tr>
+                        <tr>
+                            <td>Split PDFs</td>
+                            <td class="highlight"><span class="icon-success"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span></td>
+                            <td><span class="icon-success"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span></td>
+                        </tr>
+                        <tr>
+                            <td>Watermarks</td>
+                            <td class="highlight"><span class="icon-success"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span></td>
+                            <td>Paid only</td>
+                        </tr>
+                        <tr>
+                            <td>Page Numbers</td>
+                            <td class="highlight"><span class="icon-success"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span></td>
+                            <td><span class="icon-error"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></span></td>
+                        </tr>
+                        <tr>
+                            <td>Privacy</td>
+                            <td class="highlight"><strong>100% Local</strong></td>
+                            <td>Cloud Processing</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+    </section>
 
-        <div style="text-align: center; margin: 80px 0;">
-            <h2 style="font-size: 2.5em; margin-bottom: 20px;">🚀 Ready to Switch?</h2>
-            <p style="font-size: 1.3em; margin: 25px 0;">Join thousands who've made the switch</p>
-            <a href="https://chrome.google.com/webstore/detail/pdf-join-stamp/YOUR_EXTENSION_ID" class="cta">
-                Try PDF Join & Stamp Free
-            </a>
+    <!-- Features -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose PDF Join & Stamp?</h2>
+                <p>Everything you need in one powerful extension</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg></div>
+                    <h3>100% Free</h3>
+                    <p>No hidden costs, no premium plans, no trials. All features are completely free forever.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div>
+                    <h3>Privacy First</h3>
+                    <p>All processing happens locally in your browser. Your files never leave your computer.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+                    <h3>No Sign-up</h3>
+                    <p>Install and start using immediately. No account creation, no email verification.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg></div>
+                    <h3>All-in-One</h3>
+                    <p>Merge, stamp, compress, split, rotate, and more. Everything you need in one extension.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></div>
+                    <h3>No Limits</h3>
+                    <p>Process unlimited PDFs with no file size restrictions or monthly quotas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><svg class="icon" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg></div>
+                    <h3>High Quality</h3>
+                    <p>Professional-grade output with no quality loss or compression artifacts.</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
+    <!-- FAQ -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Is PDF Join & Stamp really free?</h3>
+                <p>Yes! PDF Join & Stamp is 100% free with no hidden costs, premium plans, or feature limitations. All features are available to everyone forever.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How is this different from DocHub?</h3>
+                <p>Unlike DocHub, PDF Join & Stamp is completely free, requires no sign-up, and processes everything locally for maximum privacy. You get all features without any restrictions.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do I need to create an account?</h3>
+                <p>No! Just install the extension from the Chrome Web Store and start using it immediately. No account, no email, no verification.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Are my files safe?</h3>
+                <p>Absolutely. All processing happens locally in your browser. Your files never get uploaded to any server or cloud service.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What features are included?</h3>
+                <p>Merge PDFs, add stamps and watermarks, compress files, split documents, rotate pages, extract pages, add page numbers, and more. All features are free and unlimited.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Try PDF Join & Stamp?</h2>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95;">Join 1,000+ users who chose the better alternative</p>
+            <a href="https://chromewebstore.google.com/detail/pdf-join-stamp/YOUR_EXTENSION_ID" class="btn btn-primary" target="_blank">Get PDF Join & Stamp - Free Forever</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 PDF Join & Stamp - Best free alternative to DocHub</p>
-            <p style="margin-top: 10px; opacity: 0.8;">100% Free • No Sign-up • Private & Secure • Works Offline</p>
+            <p>&copy; 2026 PDF Join & Stamp. All rights reserved.</p>
+            <p style="margin-top: 1rem; opacity: 0.7;">
+                <a href="index.html">All Alternatives</a> •
+                <a href="https://chromewebstore.google.com/detail/pdf-join-stamp/YOUR_EXTENSION_ID" target="_blank">Chrome Web Store</a>
+            </p>
         </div>
     </footer>
 </body>

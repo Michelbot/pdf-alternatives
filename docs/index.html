@@ -3,106 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best PDF Tool Alternatives 2026 - Free Comparisons</title>
-    <meta name="description" content="Compare the best alternatives to popular PDF tools. PDF Join & Stamp - 100% free, no sign-up, all-in-one solution.">
+    <title>PDF Join & Stamp - Best Free PDF Extension Alternative</title>
+    <meta name="description" content="Discover the best free alternative to popular PDF tools. PDF Join & Stamp offers all features for free with no sign-up required.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background: #f8f9fa;
+        /* Same CSS as pages */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+        
+        :root {
+            --primary: #0EA5E9;
+            --secondary: #38BDF8;
+            --cta: #F97316;
+            --bg-light: #F0F9FF;
+            --text: #0C4A6E;
+            --neutral-dark: #1E293B;
+            --neutral-light: #F8FAFC;
+            --white: #FFFFFF;
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            --transition: all 200ms ease;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.6;
+        }
+        
+        h1, h2 { font-family: var(--font-heading); font-weight: 600; color: var(--neutral-dark); }
+        h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+        h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+        
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 100px 20px;
+            background: var(--white);
+            padding: var(--space-lg) 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            border-radius: 0.5rem;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .btn-primary {
+            background: var(--cta);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(249, 115, 22, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .hero {
+            padding: var(--space-3xl) 0;
+            background: linear-gradient(180deg, var(--bg-light) 0%, var(--white) 100%);
             text-align: center;
         }
-        h1 { font-size: 3.5em; margin-bottom: 25px; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 50px 20px; }
-        .grid {
+        
+        .hero h1 {
+            margin-bottom: var(--space-lg);
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.8;
+            margin-bottom: var(--space-2xl);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        section {
+            padding: var(--space-3xl) 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+        
+        .alternatives-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 35px;
-            margin: 50px 0;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--space-xl);
         }
-        .card {
-            background: white;
-            padding: 35px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: transform 0.2s;
+        
+        .alternative-card {
+            background: var(--white);
+            padding: var(--space-xl);
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            text-align: center;
         }
-        .card:hover { transform: translateY(-5px); }
-        .card h3 { color: #667eea; margin-bottom: 18px; }
-        .card a {
-            display: inline-block;
-            margin-top: 20px;
-            color: #667eea;
+        
+        .alternative-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .alternative-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--neutral-dark);
+        }
+        
+        .alternative-card p {
+            opacity: 0.7;
+            margin-bottom: var(--space-lg);
+        }
+        
+        footer {
+            background: var(--neutral-dark);
+            color: var(--white);
+            padding: var(--space-2xl) 0;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--secondary);
             text-decoration: none;
-            font-weight: bold;
         }
-        .card a:hover { text-decoration: underline; }
+        
+        @media (max-width: 768px) {
+            .alternatives-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>🎯 PDF Tool Alternatives</h1>
-        <p style="font-size: 1.4em; opacity: 0.95;">Find the best free alternative to your current PDF tool</p>
-    </header>
-    
-    <div class="container">
-        <div class="grid">
-            <div class="card">
-                <h3>Smallpdf Alternative</h3>
-                <p>Discover why PDF Join & Stamp is a better free alternative to Smallpdf.</p>
-                <a href="alternative-to-smallpdf.html">Compare Now →</a>
-            </div>
-            <div class="card">
-                <h3>iLovePDF Alternative</h3>
-                <p>Discover why PDF Join & Stamp is a better free alternative to iLovePDF.</p>
-                <a href="alternative-to-ilovepdf.html">Compare Now →</a>
-            </div>
-            <div class="card">
-                <h3>PDF24 Tools Alternative</h3>
-                <p>Discover why PDF Join & Stamp is a better free alternative to PDF24 Tools.</p>
-                <a href="alternative-to-pdf24-tools.html">Compare Now →</a>
-            </div>
-            <div class="card">
-                <h3>Soda PDF Alternative</h3>
-                <p>Discover why PDF Join & Stamp is a better free alternative to Soda PDF.</p>
-                <a href="alternative-to-soda-pdf.html">Compare Now →</a>
-            </div>
-            <div class="card">
-                <h3>PDFfiller Alternative</h3>
-                <p>Discover why PDF Join & Stamp is a better free alternative to PDFfiller.</p>
-                <a href="alternative-to-pdffiller.html">Compare Now →</a>
-            </div>
-            <div class="card">
-                <h3>Adobe Acrobat Alternative</h3>
-                <p>Discover why PDF Join & Stamp is a better free alternative to Adobe Acrobat.</p>
-                <a href="alternative-to-adobe-acrobat.html">Compare Now →</a>
-            </div>
-            <div class="card">
-                <h3>Kami Alternative</h3>
-                <p>Discover why PDF Join & Stamp is a better free alternative to Kami.</p>
-                <a href="alternative-to-kami.html">Compare Now →</a>
-            </div>
-            <div class="card">
-                <h3>DocHub Alternative</h3>
-                <p>Discover why PDF Join & Stamp is a better free alternative to DocHub.</p>
-                <a href="alternative-to-dochub.html">Compare Now →</a>
-            </div>
-            <div class="card">
-                <h3>PDF Merge Alternative</h3>
-                <p>Discover why PDF Join & Stamp is a better free alternative to PDF Merge.</p>
-                <a href="alternative-to-pdf-merge.html">Compare Now →</a>
-            </div>
-            <div class="card">
-                <h3>PDF Compressor Alternative</h3>
-                <p>Discover why PDF Join & Stamp is a better free alternative to PDF Compressor.</p>
-                <a href="alternative-to-pdf-compressor.html">Compare Now →</a>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">PDF Join & Stamp</a>
+                <a href="https://chromewebstore.google.com/detail/pdf-join-stamp/YOUR_EXTENSION_ID" class="btn btn-primary" target="_blank">Add to Chrome - Free</a>
             </div>
         </div>
-    </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>The Best Free PDF Extension</h1>
+            <p>Compare PDF Join & Stamp to other PDF tools. 100% free, no sign-up, all features included. Find out why 1,000+ users chose us.</p>
+            <a href="https://chromewebstore.google.com/detail/pdf-join-stamp/YOUR_EXTENSION_ID" class="btn btn-primary" target="_blank">Get PDF Join & Stamp - Free Forever</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Compare with Popular Alternatives</h2>
+                <p>See how PDF Join & Stamp compares to other PDF tools</p>
+            </div>
+            
+            <div class="alternatives-grid">
+                <div class="alternative-card">
+                    <h3>Smallpdf Alternative</h3>
+                    <p>undefined users • undefined</p>
+                    <a href="alternative-to-smallpdf.html" class="btn btn-secondary">Compare →</a>
+                </div>
+                <div class="alternative-card">
+                    <h3>iLovePDF Alternative</h3>
+                    <p>undefined users • undefined</p>
+                    <a href="alternative-to-ilovepdf.html" class="btn btn-secondary">Compare →</a>
+                </div>
+                <div class="alternative-card">
+                    <h3>PDF24 Tools Alternative</h3>
+                    <p>undefined users • undefined</p>
+                    <a href="alternative-to-pdf24-tools.html" class="btn btn-secondary">Compare →</a>
+                </div>
+                <div class="alternative-card">
+                    <h3>Soda PDF Alternative</h3>
+                    <p>undefined users • undefined</p>
+                    <a href="alternative-to-soda-pdf.html" class="btn btn-secondary">Compare →</a>
+                </div>
+                <div class="alternative-card">
+                    <h3>PDFfiller Alternative</h3>
+                    <p>undefined users • undefined</p>
+                    <a href="alternative-to-pdffiller.html" class="btn btn-secondary">Compare →</a>
+                </div>
+                <div class="alternative-card">
+                    <h3>Adobe Acrobat Alternative</h3>
+                    <p>undefined users • undefined</p>
+                    <a href="alternative-to-adobe-acrobat.html" class="btn btn-secondary">Compare →</a>
+                </div>
+                <div class="alternative-card">
+                    <h3>Kami Alternative</h3>
+                    <p>undefined users • undefined</p>
+                    <a href="alternative-to-kami.html" class="btn btn-secondary">Compare →</a>
+                </div>
+                <div class="alternative-card">
+                    <h3>DocHub Alternative</h3>
+                    <p>undefined users • undefined</p>
+                    <a href="alternative-to-dochub.html" class="btn btn-secondary">Compare →</a>
+                </div>
+                <div class="alternative-card">
+                    <h3>PDF Merge Alternative</h3>
+                    <p>undefined users • undefined</p>
+                    <a href="alternative-to-pdf-merge.html" class="btn btn-secondary">Compare →</a>
+                </div>
+                <div class="alternative-card">
+                    <h3>PDF Compressor Alternative</h3>
+                    <p>undefined users • undefined</p>
+                    <a href="alternative-to-pdf-compressor.html" class="btn btn-secondary">Compare →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 PDF Join & Stamp. All rights reserved.</p>
+            <p style="margin-top: 1rem; opacity: 0.7;">
+                <a href="https://chromewebstore.google.com/detail/pdf-join-stamp/YOUR_EXTENSION_ID" target="_blank">Chrome Web Store</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>

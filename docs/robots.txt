@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://votresite.com/sitemap.xml
+Sitemap: https://michelbot.github.io/pdf-alternatives/sitemap.xml
